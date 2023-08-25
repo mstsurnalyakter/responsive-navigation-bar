@@ -1,0 +1,25 @@
+ nav{
+    background-color: #040404;
+    padding: 20px;
+ }
+
+
+ nav ul{
+    display: flex;
+    justify-content: flex-end;
+ 
+ }
+
+ nav ul li{
+     margin: 10px;
+ }
+
+ nav ul li a{
+    color: whitesmoke;
+    font-size: 1.3rem;
+    padding: 10px;
+ }
+
+ nav ul li a:hover{
+    background-color: crimson;
+ }

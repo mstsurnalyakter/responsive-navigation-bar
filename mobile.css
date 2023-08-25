@@ -1,0 +1,16 @@
+nav{
+    background-color: crimson;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+nav ul li{
+    background-color: #0de40d;
+    padding: 10px;
+    width: 100%;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 
+        https://blog.bitsrc.io/40-html-css-projects-for-beginner-2021-5bd01ff62361?gi=7efb8ca62b8e
+     -->
+
+    <style>
+
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+
+        #hr{grid-area: h;}
+        #ma{grid-area: m;}
+        #f{grid-area: f;}
+
+        body{
+            display: grid;
+            width: 100vw;
+            min-height: 100vh;
+            grid-template-rows: auto auto auto;
+            background-color: tomato;
+            grid-template-areas: 
+            'h'
+            'm'
+            'm'
+            'm'
+            'f';
+        }
+
+        body > section{
+            width: 100%;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        #hr{
+            background-color: teal;
+            height: 100%;
+        }
+
+        #ma{
+            background-color: purple;
+            height: 100%;
+        }
+
+        #f{
+            background-color: green;
+            height: 100%;
+            display: grid;
+            grid-template-areas: 
+            'ff fff';
+        }
+
+        #f1{
+            grid-area: ff;
+            border: 1px solid black;
+            border-top: none;
+        }
+        #f2{
+            grid-area: fff;
+            border: 1px solid black;
+            border-top: none;
+            border-left:none ;
+        }
+
+        
+        #se1{
+            grid-area: s1;
+        border: 1px solid black;
+    }
+        #se2{
+            grid-area: s2;
+            border: 1px solid black;
+        }
+        #se3{grid-area: s3;
+            border: 1px solid black;}
+
+        #a1{grid-area: a1;
+            border: 1px solid black;}
+        #a2{grid-area: a2;
+            border: 1px solid black;}
+
+
+        #ma{
+            display: grid;
+            grid-template-rows: auto auto auto;
+            grid-template-areas: 
+            's1 a1'
+            's2 a2'
+            's3 .';
+        }
+
+        article{
+            border: 1px solid black;
+            height: 100%;
+          
+        }
+
+        aside{
+            border: 1px solid black;
+            height: 100%;
+        }
+     
+        
+    </style>
+
+</head>
+<body>
+   
+    <section class="hr">header</section>
+
+    <section class="ma">
+        <article>
+            <section class="se1">Se1</section>
+            <section class="se2">Se2</section>
+            <section class="se3">Se3</section>
+        </article>
+
+        <aside>
+            <section class="a1">A1</section>
+            <section class="a2">A2</section>
+        </aside>
+
+    </section>
+
+    <section class="f">
+        <section class="f1">f1</section>
+        <section class="f2">f2</section>
+    </section>
+ 
+    
+</body>
+</html>

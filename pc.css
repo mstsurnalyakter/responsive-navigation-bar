@@ -1,0 +1,20 @@
+nav{
+    background-color: teal;
+    padding: 20px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li{
+    margin: 10px;
+}
+
+nav ul li a{
+    color: aliceblue;
+    font-size: 2rem;
+    padding: 10px;
+}
